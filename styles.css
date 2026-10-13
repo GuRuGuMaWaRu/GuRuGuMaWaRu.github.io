@@ -26,6 +26,7 @@
   font-style: normal;
   font-display: swap;
 }
+
 :root {
   color-scheme: dark;
   --paper: #f1efe5;
@@ -36,6 +37,16 @@
   --mono: "IBM Plex Mono", Consolas, monospace;
   --sans: Inter, Arial, sans-serif;
 }
+
+/* Global */
+
+ol,
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -217,18 +228,15 @@ h2 {
   flex: 1;
   background: var(--line);
 }
-.project-list {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
+
+/* Current Project */
 .project-row {
   display: grid;
   grid-template-columns: 75px minmax(0, 1fr) auto;
   align-items: start;
   gap: 26px;
-  min-height: 119px;
-  padding: 27px 0 25px;
+  min-height: 120px;
+  padding: 28px 0 24px;
   border-bottom: 1px solid var(--line);
 }
 .project-index {
@@ -261,28 +269,41 @@ h2 {
   font-size: 12px;
   white-space: nowrap;
 }
+
+/* About Section */
 .about-section {
   display: grid;
   grid-template-columns: 170px minmax(0, 1fr);
   gap: 12px 27px;
   margin-top: 33px;
   scroll-margin-top: 36px;
+
+  h2 {
+    padding-top: 1px;
+  }
+
+  p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.65;
+  }
+
+  .about-detail {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    grid-column: 2;
+    max-width: 590px;
+  }
+
+  .about-detail p {
+    color: var(--secondary);
+    font-size: 12px;
+    line-height: 1.85;
+  }
 }
-.about-section h2 {
-  padding-top: 1px;
-}
-.about-section p {
-  margin: 0;
-  font-size: 14px;
-  line-height: 1.65;
-}
-.about-section .about-detail {
-  grid-column: 2;
-  color: var(--secondary);
-  font-size: 12px;
-  line-height: 1.85;
-  max-width: 590px;
-}
+
+/* Archive Section */
 .archive-section {
   margin-top: 36px;
   border-top: 1px solid var(--line);
@@ -322,9 +343,6 @@ summary:hover h2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 5px 35px;
-  list-style: none;
-  margin: 0;
-  padding: 0;
 }
 .archive-list a {
   display: block;
