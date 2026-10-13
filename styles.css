@@ -133,6 +133,30 @@ h1 {
   line-height: 1.7;
   letter-spacing: 0.12px;
 }
+
+.intro-skills {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  color: var(--gold);
+  font-size: 14px;
+  opacity: 0.9;
+
+  span {
+    display: inline-flex;
+    align-items: center;
+  }
+
+  span:not(:last-child)::after {
+    content: "";
+    width: 4px;
+    height: 4px;
+    margin-inline: 0.7em;
+    transform: rotate(45deg);
+    background: currentColor;
+  }
+}
+
 .intro-actions {
   display: flex;
   align-items: center;
