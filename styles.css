@@ -114,6 +114,37 @@ summary:focus-visible {
   margin: auto;
   padding-inline: clamp(24px, 5vw, 80px);
 }
+
+.page-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 254px;
+  gap: 36px;
+  row-gap: 0;
+  padding-block-start: 30px;
+  outline: none;
+}
+
+.page-grid > section,
+.page-grid > footer {
+  grid-column: 1;
+}
+
+@media (max-width: 1150px) and (min-width: 901px) {
+  .page-grid {
+    grid-template-columns: minmax(0, 1fr) 210px;
+    gap: 25px;
+  }
+}
+
+@media (max-width: 900px) {
+  .page-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    padding-block-start: 0;
+  }
+}
+
 /* Layout: END */
 
 /* Header: START */
@@ -180,30 +211,6 @@ header {
 }
 /* Header: END */
 
-.page-grid {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) 254px;
-  gap: 36px;
-}
-.page-grid {
-  row-gap: 0;
-}
-.page-grid > section,
-.page-grid > footer {
-  grid-column: 1;
-}
-main {
-  min-width: 0;
-  padding: 37px 0 0;
-  outline: none;
-}
-.eyebrow {
-  margin: 0 0 17px;
-  color: var(--gold);
-  font-size: 15px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-}
 h1 {
   margin: 0;
   font: 800 clamp(42px, 6.5vw, 94px)/1.02 var(--sans);
@@ -266,6 +273,14 @@ h2 {
 
 /* Intro: START */
 .intro {
+  .eyebrow {
+    margin: 0 0 17px;
+    color: var(--gold);
+    font-size: 15px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
   .intro-headline {
     display: flex;
     align-items: center;
@@ -670,10 +685,6 @@ summary:hover h2 {
 }
 
 @media (max-width: 1150px) and (min-width: 901px) {
-  .page-grid {
-    grid-template-columns: minmax(0, 1fr) 210px;
-    gap: 25px;
-  }
   h1 {
     letter-spacing: -3px;
     font-size: 6.5vw;
@@ -693,18 +704,6 @@ summary:hover h2 {
 }
 
 @media (max-width: 900px) {
-  .page-grid {
-    display: flex;
-    flex-direction: column;
-    gap: 0;
-  }
-  main {
-    display: contents;
-  }
-  main.page-grid {
-    display: flex;
-    padding-top: 0;
-  }
   h1 {
     font-size: clamp(48px, 8vw, 76px);
     letter-spacing: -3px;
