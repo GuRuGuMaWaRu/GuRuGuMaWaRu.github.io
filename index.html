@@ -50,7 +50,9 @@
               class="intro-portrait"
               src="assets/bearded-guy.png"
               alt="Portrait of Petro Krevenets" />
-            <h1 id="intro-title">Building<br />and exploring.</h1>
+            <h1 id="intro-title" class="intro-title">
+              Building<br />and exploring.
+            </h1>
           </div>
           <p class="intro-skills">
             <span>React</span>
@@ -65,8 +67,8 @@
             and try to understand why things work. Or why they don't.
           </p>
           <div class="intro-actions">
-            <a class="button" href="#work">View my work</a>
-            <a class="text-link hello-link" href="#contact"
+            <a class="link-to-work" href="#work">View my work</a>
+            <a class="link-to-contact" href="#contact"
               >Say hello
               <img
                 class="arrow"
@@ -80,7 +82,7 @@
         <!-- Intro: END -->
 
         <!-- Side: START -->
-        <aside class="ride-note" aria-labelledby="ride-heading">
+        <aside class="section ride-note" aria-labelledby="ride-heading">
           <span class="note-rule" aria-hidden="true"></span>
           <h2 id="ride-heading">A thought from the ride</h2>
           <p>
@@ -98,8 +100,11 @@
         <!-- Side: END -->
 
         <!-- Section, Current Work: START -->
-        <section id="work" class="work-section" aria-labelledby="work-heading">
-          <div class="section-heading">
+        <section
+          id="work"
+          class="section work-section"
+          aria-labelledby="work-heading">
+          <div class="work-section-heading">
             <h2 id="work-heading">Currently making</h2>
             <span aria-hidden="true"></span>
           </div>
@@ -140,10 +145,10 @@
         <!-- Section, About: START -->
         <section
           id="about"
-          class="about-section"
+          class="section about-section"
           aria-labelledby="about-heading">
           <h2 id="about-heading">Beyond the screen</h2>
-          <p>A few words about me</p>
+          <p class="about-intro">A few words about me</p>
           <div class="about-detail">
             <p>
               I took up coding back in 2013 and was astounded! I remember going
@@ -166,7 +171,9 @@
         <!-- Section, About: END -->
 
         <!-- Section, Archive: START -->
-        <section class="archive-section" aria-labelledby="archive-heading">
+        <section
+          class="section archive-section"
+          aria-labelledby="archive-heading">
           <details id="early-experiments">
             <summary>
               <h2 id="archive-heading">Early JavaScript experiments</h2>
@@ -278,7 +285,7 @@
         <!-- Contacts: START -->
         <footer
           id="contact"
-          class="contact-section"
+          class="section contact-section"
           aria-labelledby="contact-heading">
           <h2 id="contact-heading">Find me elsewhere</h2>
           <div class="social-links">
