@@ -1,27 +1,20 @@
 @font-face {
   font-family: Inter;
-  src: url("assets/fonts/inter-regular.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: Inter;
-  src: url("assets/fonts/inter-bold.ttf") format("truetype");
+  src: url("assets/fonts/inter-bold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: Inter;
-  src: url("assets/fonts/inter-extrabold.ttf") format("truetype");
+  src: url("assets/fonts/inter-extrabold.woff2") format("woff2");
   font-weight: 800;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "IBM Plex Mono";
-  src: url("assets/fonts/ibm-plex-mono.ttf") format("truetype");
+  src: url("assets/fonts/ibm-plex-mono.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
