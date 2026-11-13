@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Social preview — Petro Krevenets</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .social-card {
+        box-sizing: border-box;
+        width: 1200px;
+        height: 630px;
+        display: grid;
+        grid-template-columns: max-content 320px;
+        align-items: center;
+        justify-content: center;
+        gap: 96px;
+        background: var(--background);
+        color: var(--paper);
+      }
+
+      .social-card h1 {
+        margin: 0;
+        font: 800 76px/1.02 var(--sans);
+        letter-spacing: -3px;
+      }
+
+      .social-card p {
+        margin: 24px 0 0;
+        color: var(--gold);
+        font: 400 28px/1.4 var(--mono);
+      }
+
+      .social-card img {
+        display: block;
+        width: 100%;
+        height: auto;
+        border-radius: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="social-card">
+      <div>
+        <h1>Petro<br />Krevenets</h1>
+        <p>Software developer</p>
+      </div>
+      <img
+        src="assets/bearded-guy.png"
+        width="1254"
+        height="1254"
+        alt="Portrait of Petro Krevenets" />
+    </main>
+  </body>
+</html>
