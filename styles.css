@@ -433,8 +433,13 @@ header {
     grid-template-columns: 75px minmax(0, 1fr) auto;
     align-items: start;
     gap: 26px;
+    row-gap: 0px;
     padding: 28px 0 24px;
     border-block-end: 1px solid var(--line);
+  }
+
+  .project-row-linked {
+    row-gap: 12px;
   }
 
   .project-index {
@@ -449,11 +454,73 @@ header {
     margin: 0;
   }
 
-  .project-info p {
+  .project-description,
+  .project-case-study-content {
+    max-width: 62ch;
+    color: var(--secondary);
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .project-case-study {
+    grid-column: 2 / -1;
+
+    summary {
+      padding-block: 10px;
+      cursor: pointer;
+      color: var(--gold);
+
+      &:hover {
+        color: var(--gold-hover);
+      }
+
+      h4 {
+        display: inline;
+        margin-inline-start: 10px;
+        font-size: 13px;
+      }
+    }
+  }
+
+  .project-case-study-content {
+    padding-block: 4px 8px;
+    padding-inline-start: 16px;
+    border-inline-start: 1px solid var(--line);
+
+    h4 {
+      margin: 0;
+      color: var(--paper);
+      font: 700 16px/1.4 var(--sans);
+    }
+
+    p {
+      margin: 6px 0 0;
+    }
+
+    p + h4 {
+      margin-block-start: 16px;
+    }
+  }
+
+  .project-info .project-tags {
     font-size: 14px;
     line-height: 1.6;
     margin: 8px 0 0;
     color: var(--secondary);
+
+    span {
+      display: inline-flex;
+      align-items: center;
+    }
+
+    span:not(:last-child)::after {
+      content: "";
+      width: 4px;
+      height: 4px;
+      margin-inline: 0.7em;
+      transform: rotate(45deg);
+      background: currentColor;
+    }
   }
 
   .project-action {
@@ -485,6 +552,7 @@ header {
     .project-row {
       grid-template-columns: 45px minmax(0, 1fr) auto;
       gap: 20px;
+      row-gap: 0px;
     }
 
     .project-info h3 {
@@ -501,6 +569,7 @@ header {
     .project-row {
       grid-template-columns: 26px minmax(0, 1fr);
       gap: 14px;
+      row-gap: 0px;
       padding: 25px 0;
     }
 
@@ -512,7 +581,7 @@ header {
       font-size: 22px;
     }
 
-    .project-info p {
+    .project-info .project-tags {
       font-size: 12px;
     }
 
