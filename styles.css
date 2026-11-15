@@ -325,8 +325,13 @@ header {
   .link-to-contact {
     display: inline-flex;
     align-items: center;
-    gap: 19px;
+    gap: 12px;
     min-height: 44px;
+
+    .jump-arrow {
+      font-size: 19px;
+      line-height: 1;
+    }
   }
 
   @media (900px < width <= 1150px) {
@@ -401,11 +406,6 @@ header {
 
     .link-to-contact {
       font-size: 13px;
-      gap: 10px;
-    }
-
-    .link-to-contact .arrow {
-      width: 24px;
     }
   }
 }
