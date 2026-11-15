@@ -454,52 +454,11 @@ header {
     margin: 0;
   }
 
-  .project-description,
-  .project-case-study-content {
+  .project-description {
     max-width: 62ch;
     color: var(--secondary);
     font-size: 14px;
     line-height: 1.7;
-  }
-
-  .project-case-study {
-    grid-column: 2 / -1;
-
-    summary {
-      padding-block: 10px;
-      cursor: pointer;
-      color: var(--gold);
-
-      &:hover {
-        color: var(--gold-hover);
-      }
-
-      h4 {
-        display: inline;
-        margin-inline-start: 10px;
-        font-size: 13px;
-      }
-    }
-  }
-
-  .project-case-study-content {
-    padding-block: 4px 8px;
-    padding-inline-start: 16px;
-    border-inline-start: 1px solid var(--line);
-
-    h4 {
-      margin: 0;
-      color: var(--paper);
-      font: 700 16px/1.4 var(--sans);
-    }
-
-    p {
-      margin: 6px 0 0;
-    }
-
-    p + h4 {
-      margin-block-start: 16px;
-    }
   }
 
   .project-info .project-tags {
