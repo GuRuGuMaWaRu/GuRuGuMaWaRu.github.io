@@ -430,16 +430,11 @@ header {
 
   .project-row {
     display: grid;
-    grid-template-columns: 75px minmax(0, 1fr) auto;
+    grid-template-columns: 75px minmax(0, 1fr);
     align-items: start;
-    gap: 26px;
-    row-gap: 0px;
+    gap: 4px 26px;
     padding: 28px 0 24px;
     border-block-end: 1px solid var(--line);
-  }
-
-  .project-row-linked {
-    row-gap: 12px;
   }
 
   .project-index {
@@ -488,36 +483,35 @@ header {
     }
   }
 
+  .project-actions {
+    grid-column: 2;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+  }
+
   .project-action {
     display: flex;
     align-items: center;
     gap: 15px;
-    align-self: center;
     font-size: 12px;
     min-height: 44px;
   }
 
-  @media (900px < width <= 1150px) {
-    .project-row {
-      grid-template-columns: 45px minmax(0, 1fr);
-      gap: 18px;
-    }
+  .project-repo-link {
+    color: var(--secondary);
+    text-decoration: underline;
+    text-underline-offset: 3px;
 
-    .project-info h3 {
-      font-size: 25px;
-    }
-
-    .project-action {
-      grid-column: 2;
-      justify-self: start;
+    &:hover {
+      color: var(--gold);
     }
   }
 
-  @media (width <= 900px) {
+  @media (width <= 1150px) {
     .project-row {
-      grid-template-columns: 45px minmax(0, 1fr) auto;
-      gap: 20px;
-      row-gap: 0px;
+      grid-template-columns: 45px minmax(0, 1fr);
+      column-gap: 20px;
     }
 
     .project-info h3 {
@@ -533,8 +527,7 @@ header {
 
     .project-row {
       grid-template-columns: 26px minmax(0, 1fr);
-      gap: 14px;
-      row-gap: 0px;
+      column-gap: 14px;
       padding: 25px 0;
     }
 
@@ -551,8 +544,6 @@ header {
     }
 
     .project-action {
-      grid-column: 2;
-      justify-self: start;
       font-size: 11px;
     }
   }
