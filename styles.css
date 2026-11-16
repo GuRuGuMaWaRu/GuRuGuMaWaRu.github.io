@@ -453,7 +453,7 @@ header {
     color: var(--secondary);
     font-size: 14px;
     line-height: 1.7;
-    text-align: justify;
+    text-align: start;
   }
 
   .project-info .project-tags {
