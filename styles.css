@@ -607,8 +607,7 @@ header {
 
 /* Archive Section: START */
 .archive-section {
-  border-block-start: 1px solid var(--line);
-  border-block-end: 1px solid var(--line);
+  border-block: 1px solid var(--line);
 
   summary {
     cursor: pointer;
@@ -664,6 +663,10 @@ header {
       font-size: 11px;
       margin: 20px 0 0;
     }
+  }
+
+  @media (width <= 900px) {
+    border-block-end: none;
   }
 
   @media (width <= 560px) {
@@ -748,8 +751,8 @@ header {
     grid-template-columns: minmax(0, 1fr) clamp(60px, 16vw, 92px);
     align-items: center;
     border-inline-start: 0;
-    border-block-start: 1px solid var(--line);
-    padding: 25px 0 0;
+    border-block: 1px solid var(--line);
+    padding: 25px 0;
     margin-block-start: 64px;
     gap: 0 20px;
 
