@@ -456,6 +456,28 @@ header {
     text-align: start;
   }
 
+  .project-preview {
+    display: block;
+    width: min(100%, 520px);
+    margin-block: 20px 8px;
+  }
+
+  .project-preview img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 1px solid var(--line);
+  }
+
+  .project-preview > span {
+    display: block;
+    margin-block-start: 6px;
+    color: var(--secondary);
+    font-size: 11px;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+
   .project-info .project-tags {
     display: flex;
     flex-wrap: wrap;
