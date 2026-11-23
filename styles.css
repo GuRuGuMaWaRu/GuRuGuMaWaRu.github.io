@@ -433,7 +433,6 @@ header {
     align-items: start;
     gap: 4px 26px;
     padding: 28px 0 24px;
-    border-block-end: 1px solid var(--line);
   }
 
   .project-index {
@@ -578,61 +577,6 @@ header {
   }
 }
 /* Current Work: END */
-
-/* About Section: START */
-.about-section {
-  display: grid;
-  grid-template-columns: 170px minmax(0, 1fr);
-  gap: 18px 28px;
-  scroll-margin-top: 36px;
-
-  h2 {
-    padding-block-start: 1px;
-  }
-
-  .about-intro,
-  .about-detail p {
-    margin: 0;
-    font-size: 14px;
-    line-height: 1.65;
-    text-align: justify;
-    text-wrap: pretty;
-    hyphens: auto;
-  }
-
-  .about-detail {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    grid-column: 2;
-    max-width: 590px;
-  }
-
-  .about-detail p {
-    color: var(--secondary);
-    font-size: 12px;
-    line-height: 1.85;
-  }
-
-  @media (width <= 560px) {
-    display: block;
-    margin-block-start: 28px;
-
-    h2 {
-      color: var(--gold);
-      margin-block-end: 12px;
-    }
-
-    .about-intro {
-      display: none;
-    }
-
-    .about-detail {
-      margin-block-start: 14px;
-    }
-  }
-}
-/* About Section: END */
 
 /* Archive Section: START */
 .archive-section {
