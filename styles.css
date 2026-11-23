@@ -454,6 +454,14 @@ header {
     font-size: 14px;
     line-height: 1.7;
     text-align: start;
+
+    .project-description-highlight {
+      display: inline-block;
+      padding-inline: 6px;
+      background-color: color-mix(in srgb, var(--gold) 45%, var(--background));
+      border-radius: 999px;
+      font-weight: 800;
+    }
   }
 
   .project-preview {
