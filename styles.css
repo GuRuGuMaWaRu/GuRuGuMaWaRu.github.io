@@ -456,7 +456,6 @@ header {
     text-align: start;
 
     .project-description-highlight {
-      display: inline-block;
       padding-inline: 6px;
       background-color: color-mix(in srgb, var(--gold) 45%, var(--background));
       border-radius: 999px;
